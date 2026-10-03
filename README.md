@@ -93,6 +93,7 @@ RapistOps/
     data/
     docs/
     notes/
+    research/
     README.md
     .gitignore
     pyproject.toml

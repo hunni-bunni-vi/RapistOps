@@ -24,73 +24,136 @@ Goal: Define the smallest set of objects RapistOps needs to represent, preserve,
 
 ## 1.1 — Source & Provenance
 Goal: Define where information comes from and how its origin is preserved.
-- [ ] Define Source
-- [ ] Define Provenance
+- [x] Define Source
+- [x] Define Provenance
 
 ## 1.2 — Records & Evidence
 Goal: Define the information being preserved and the evidence associated with it.
-- [ ] Define Record
-- [ ] Define Evidence
+- [x] Define Record
+- [x] Define Evidence
 
 ## 1.3 — People & Institutions
 Goal: Define the people and organizations represented in records.
-- [ ] Define Person
-- [ ] Define Institution
+- [x] Define Person
+- [x] Define Institution
 
 ## 1.4 — Events & Cases
 Goal: Define the things that happened and the cases/proceedings that organize them.
-- [ ] Define Event
-- [ ] Define Case
+- [x] Define Event
+- [x] Define Case
 
 ## 1.5 — Status
 Goal: Define how RapistOps represents the state or outcome of a record, case, or proceeding.
-- [ ] Define Status
+- [x] Define Status
 
 ## 1.6 — Relationships
 Goal: Define how objects in the system are explicitly connected.
-- [ ] Define Relationship
+- [x] Define Relationship
 
 ## 1.7 — Core Model Integration
 Goal: Verify that the core objects form a coherent model before moving into the database phase.
-- [ ] Identify required relationships between core objects
-- [ ] Identify required fields for each object
-- [ ] Identify objects that depend on other objects
-- [ ] Check that the model preserves provenance and context
-- [ ] Check that reported information remains distinguishable from established outcomes
-- [ ] Review the complete core data model
-- [ ] Confirm Phase 1 is complete
+- [x] Identify required relationships between core objects
+- [x] Identify required fields for each object
+- [x] Identify objects that depend on other objects
+- [x] Check that the model preserves provenance and context
+- [x] Check that reported information remains distinguishable from established outcomes
+- [x] Review the complete core data model
+- [x] Confirm Phase 1 is complete
 
 # Phase 2 — Database
 
 Goal: Persist the core RapistOps data.
 
-- [ ] Configure PostgreSQL
-- [ ] Create initial database schema
-- [ ] Create Source storage
-- [ ] Create Record storage
-- [ ] Create Evidence storage
-- [ ] Create Person storage
-- [ ] Create Institution storage
-- [ ] Create Event storage
-- [ ] Create Case storage
-- [ ] Create Relationship storage
-- [ ] Create Status storage
-- [ ] Create Provenance storage
-- [ ] Test database operations
+## 2.1 — Database Configuration
+- [x] Configure PostgreSQL
+- [x] Configure database connection
+- [x] Verify database connection
+
+## 2.2 — Initial Schema
+- [x] Create initial database schema
+- [x] Define table relationships
+- [x] Define primary keys
+- [x] Define foreign keys
+
+## 2.3 — Core Storage
+- [x] Create Source storage
+- [x] Create Provenance storage
+- [x] Create Record storage
+- [x] Create Evidence storage
+- [x] Create Person storage
+- [x] Create Institution storage
+- [x] Create Event storage
+- [x] Create Case storage
+- [x] Create Status storage
+- [x] Create Relationship storage
+
+## 2.4 — Database Operations
+- [x] Test Source operations
+- [x] Test Provenance operations
+- [x] Test Record operations
+- [x] Test Evidence operations
+- [x] Test Person operations
+- [x] Test Institution operations
+- [x] Test Event operations
+- [x] Test Case operations
+- [x] Test Status operations
+- [x] Test Relationship operations
+- [x] Test complete database integration
 
 # Phase 3 — Source Import
 
 Goal: Bring a real permitted public-source record into the system.
 
-- [ ] Define source-import interface
-- [ ] Implement first source importer
-- [ ] Retrieve source data
+## 3.1 — Source Import Interface
+Define the contract for how source importers work.
+- [x] Define importer responsibilities
+- [x] Define importer input
+- [x] Define importer output
+- [x] Define source reference requirements
+- [x] Define collection timestamp requirements
+- [x] Define import failure behavior
+
+## 3.2 — First Source Importer
+Build the first concrete importer.
+- [ ] Select first permitted public source
+- [ ] Define source-specific importer
+- [ ] Implement source retrieval
+- [ ] Parse source data
+- [ ] Convert source data into RapistOps records
+
+## 3.3 — Source Preservation
+Make sure the imported information remains traceable to its origin.
 - [ ] Preserve original source reference
+- [ ] Preserve source identity
 - [ ] Record collection timestamp
-- [ ] Store imported record
-- [ ] Handle invalid source data
-- [ ] Test successful import
-- [ ] Test failed import
+- [ ] Create provenance information
+- [ ] Preserve relevant collection context
+
+## 3.4 — Record Storage
+Connect the importer to the database layer we just built.
+- [ ] Create imported Record
+- [ ] Create associated Provenance
+- [ ] Store Record
+- [ ] Store Provenance
+- [ ] Verify stored data
+
+## 3.5 — Invalid Source Data
+Define what happens when the source doesn't provide usable information.
+- [ ] Detect invalid source data
+- [ ] Detect missing required fields
+- [ ] Prevent invalid records from being stored
+- [ ] Define importer error behavior
+- [ ] Test invalid input
+
+## 3.6 — Import Testing
+Verify the complete import process.
+- [ ] Test successful retrieval
+- [ ] Test successful parsing
+- [ ] Test provenance creation
+- [ ] Test record storage
+- [ ] Test invalid source data
+- [ ] Test failed retrieval
+- [ ] Test complete import flow
 
 # Phase 4 — Evidence & Provenance
 
