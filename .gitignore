@@ -1,10 +1,5 @@
-# Virtual environment
-.venv/
-
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
+# Rust
+/target/
 
 # Environment / secrets
 .env
@@ -16,16 +11,6 @@ __pycache__/
 
 # VS Code
 .vscode/
-
-# Testing / coverage
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Build / packaging
-build/
-dist/
-*.egg-info/
 
 # Local data
 data/local/
