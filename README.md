@@ -1,6 +1,8 @@
 # RapistOps
 A public-source accountability intelligence system designed to make sexual violence harder to hide.
 
+![Alt Text](https://media.discordapp.net/attachments/1098656802293432390/1258790914046820362/attachment-1.gif?ex=6ac45c25&is=6ac30aa5&hm=8300882081a4b716998c0d89b1b466fb8eda696e665a6b58d3481bba26bc220f&=)
+
 RapistOps connects publicly available reports, records, evidence, people, cases, and institutions so information that might otherwise disappear can be found, connected, and tracked.
 
 ## Purpose
